@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: darkorange
+}
+
+#diagram {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: orange;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 180px;
+    align-items: end;
+    gap: 8px;
+}
+
+
+@keyframes voks {
+    to {
+        transform: scaleY(4);
+    }
+}
+
+@keyframes voks1 {
+    to {
+        transform: scaleY(6);
+    }
+}
+
+@keyframes voks2 {
+    to {
+        transform: scaleY(8);
+    }
+}
+
+@keyframes voks3 {
+    to {
+        transform: scaleY(5);
+    }
+}
+
+@keyframes voks4 {
+    to {
+        transform: scaleY(2);
+    }
+}
+
+@keyframes voks5 {
+    to {
+        transform: scaleY(7);
+    }
+}
+
+.soyle {
+    transform-origin: bottom left;
+    animation-name: voks;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: peru;
+    height: 10%;
+    border-radius: 2px 2px 0 0;
+}
+.soyle1 {
+    transform-origin: bottom left;
+    animation-name: voks1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: peru;
+    height: 10%;
+    border-radius: 2px 2px 0 0;
+}
+.soyle2 {
+    transform-origin: bottom left;
+    animation-name: voks2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: peru;
+    height: 10%;
+    border-radius: 2px 2px 0 0;
+}
+.soyle3 {
+    transform-origin: bottom left;
+    animation-name: voks3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: peru;
+    height: 10%;
+    border-radius: 2px 2px 0 0;
+}
+.soyle4 {
+    transform-origin: bottom left;
+    animation-name: voks4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: peru;
+    height: 10%;
+    border-radius: 2px 2px 0 0;
+}
+.soyle5 {
+    transform-origin: bottom left;
+    animation-name: voks5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: peru;
+    height: 10%;
+    border-radius: 2px 2px 0 0;
+}

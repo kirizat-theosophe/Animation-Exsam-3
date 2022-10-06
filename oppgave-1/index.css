@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: #ddd;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.firkant2 {
+    animation-name: snurr;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border: 1px solid darkblue;
+    background-color: darkgoldenrod;
+}
+
+@keyframes snurr {
+    to {
+        transform: rotate(1turn);
+    }
+}
+@keyframes snurr1 {
+    to {
+        transform: rotate(-1turn);
+    }
+}
+.firkant1 {
+    animation-name: snurr1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid darkgreen;
+    background-color: darkmagenta;
+}
+
+.bakgrunn:hover div {
+    animation-direction: reverse;
+}

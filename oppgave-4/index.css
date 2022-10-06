@@ -1,0 +1,163 @@
+body {
+    margin:0;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sirkel {
+    width:80px;
+    height:80px;
+    border: 25px solid rgb(36, 94, 255);
+    border-radius: 50%;
+    animation: endreFarge2 2.5s linear infinite;
+}
+.strek {
+    width:20px;
+    height:70px;
+    background-color:rgb(36, 94, 255);
+    border-radius: 12px; 
+    position: absolute;
+}
+
+.p1 {
+    top:40px;
+    left:120px;
+    transform:rotate(140deg);
+    transform-origin: left left;
+    animation: endreFarge 2.5s linear infinite;
+}
+
+.p2 {
+    top:40px;
+    right:120px;
+    transform:rotate(-140deg);
+    animation: endreFarge 2.5s linear infinite;
+    transform-origin: left left;
+}
+
+.p3 {
+    top:100px;
+    right:80px;
+    animation: endreFarge 2.5s linear infinite;
+    transform-origin: center;
+}
+
+.p4 {
+    top:100px;
+    left:80px;
+    animation: endreFarge 2.5s linear infinite;
+}
+
+.strekend {
+    margin-top: 218px; 
+    margin-left:-120px;
+    width:100px; 
+    height:10px;
+    background-color: rgb(184, 171, 171);
+    border-radius:12px;
+    animation: endreBredde 2.5s linear infinite;
+}
+
+@keyframes endreBredde {
+    0% {
+        width:100px;
+    }
+    10% {
+        width:100px;
+    }
+    30% {
+        width:130px;
+    }
+    50% {
+        width:100px;
+    }
+    57% {
+        width:95px;
+    }
+    64% {
+        width:98px;
+    }
+    100% {
+        width:100px
+    }
+}
+
+.mainbox {
+    position: relative;
+    animation:hopp 2.5s linear infinite;
+}
+
+@keyframes hopp {
+    0% {
+        transform: translate(0,0); 
+    }
+    10% {
+        transform: translate(0,0); 
+    }
+    30% { 
+        transform: translate(0,-40px); 
+    }
+    50% { 
+        transform: translate(0,0); 
+    }
+    57% {
+        transform: translate(0,-10px); 
+    }
+    64% {
+        transform: translate(0,0); 
+    }
+    100% {
+        transform: translate(0,0); }
+}
+
+
+@keyframes endreFarge {
+    20% {
+        background-color: rgb(190, 59, 190);
+    }
+    25% {
+        background-color: rgb(190, 59, 190);
+    }
+    35%{
+        background-color: rgb(190, 59, 190);
+    }
+    50% {
+        background-color: rgb(190, 59, 190);
+    }
+    58% {
+        background-color: rgb(190, 59, 190);
+    }
+    65% {
+        background-color: rgb(36, 94, 255);
+    }
+    100% {
+        background-color: rgb(36, 94, 255);
+    }
+}
+
+@keyframes endreFarge2 {
+    20% {
+        border: 25px solid rgb(190, 59, 190);
+    }
+    25% {
+        border: 25px solid rgb(190, 59, 190);
+    }
+    35%{
+        border: 25px solid rgb(190, 59, 190);
+    }
+    50% {
+        border: 25px solid rgb(190, 59, 190);
+    }
+    58% {
+        border: 25px solid rgb(190, 59, 190);
+    }
+    65%{
+        border: 25px solid rgb(36, 94, 255);
+    }
+    100%{
+        border: 25px solid rgb(36, 94, 255);
+    }
+}

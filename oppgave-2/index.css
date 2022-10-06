@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: #ddd;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bane {
+    width: 400px;
+    height: 120px;
+    border: 1px solid green;
+    position: relative;
+    background-color: lightblue;
+}
+
+.bane div {
+    position: absolute;
+}
+
+@keyframes flytt {
+    0% {
+        left: 30px;
+        top: 55px;
+    }
+    
+    30% {
+        top: 0;
+        left: 280px;
+    }
+
+    60% {
+        top: 0;
+        left: 200px;
+    }
+
+    80% {
+        top: 105px;
+        left: 300px;
+    }
+
+    100% {
+       left: 321px; 
+       top: 51px;
+    }
+}
+
+@keyframes flytt1 {
+    0% {
+        left: 30px;
+        top: 55px;
+    }
+    
+    40% {
+        bottom: 0;
+    }
+
+    80% {
+        top: 100px;
+    }
+
+    100% {
+       left: 321px; 
+       top: 51px;
+    }
+}
+.stein {
+    animation-name: flytt;
+    width: 15px;
+    height: 15px;
+    background-color: indigo;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    left: 30px;
+    top: 50px;
+    animation: flytt 5s linear forwards;
+}
+
+.stein1 {
+    animation-name: flytt1;
+    width: 15px;
+    height: 15px;
+    background-color:deeppink;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    left: 34px;
+    top: 15px;
+    animation: flytt 4s ease-out forwards;
+}
+
+/* Bygger boet */
+
+.sirkel {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;    
+    right: 60px;
+    top: 50px
+}
+
+.s1 {
+    background-color:lightblue;
+}
+
+.s2 {
+    background-color:green;
+    transform: scale(2);
+}
+
+.s3 {
+    background-color: lightcoral;
+    transform: scale(3);
+}
+
+.s4 {
+    background-color: blueviolet;
+    transform: scale(4);
+}
